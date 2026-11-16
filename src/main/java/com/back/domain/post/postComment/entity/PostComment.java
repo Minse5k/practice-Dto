@@ -15,7 +15,6 @@ import static jakarta.persistence.FetchType.LAZY;
 @NoArgsConstructor
 public class PostComment extends BaseEntity {
     @ManyToOne(fetch = LAZY)
-
     private Post post;
     private String content;
 
